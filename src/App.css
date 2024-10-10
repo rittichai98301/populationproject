@@ -1,0 +1,44 @@
+html, body {
+  height: 100%; /* ให้ความสูงของ html และ body เป็น 100% */
+  margin: 0; /* ลบ margin */
+}
+
+body {
+  background-image: url('./flags/test.jpg'); /* ใช้รูปภาพ */
+  background-size: cover; /* ให้รูปภาพครอบคลุมทั้งพื้นหลัง */
+  background-position: center; /* จัดตำแหน่งรูปภาพ */
+  background-repeat: no-repeat; /* ไม่ให้รูปภาพซ้ำ */
+  display: flex; /* ใช้ Flexbox สำหรับการจัดตำแหน่ง */
+  justify-content: center; /* จัดกลางในแนวนอน */
+}
+
+.container {
+  width: 100%; /* กำหนดความกว้างเป็น 90% */
+  max-width: 800px; /* ความกว้างสูงสุด */
+  margin: auto; /* จัดกลางในแนวนอน */
+  padding: 20px; /* ระยะห่างภายใน */
+  background-color: #f9f9f9; /* สีพื้นหลัง */
+  border-radius: 8px; /* มุมโค้ง */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+  position: relative; /* เพิ่มตำแหน่งเพื่อปรับตำแหน่งแนวตั้ง */
+  top: 50%; /* เลื่อนลงไปที่ 50% ของความสูง */
+  transform: translateY(-50%); /* เลื่อนขึ้นไปเพื่อจัดกลาง */
+}
+
+h1 {
+  font-size: 2rem; /* ขนาดตัวอักษร */
+  font-weight: bold; /* หนักตัวอักษร */
+  color: #333; /* สีตัวอักษร */
+  text-align: center; /* จัดกลาง */
+  margin: 20px 0; /* ระยะห่างบนและล่าง */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* เงา */
+}
+
+h2 {
+  font-size: 1.8rem; /* ขนาดตัวอักษร */
+  font-weight: normal; /* น้ำหนักตัวอักษร */
+  text-align: center; /* จัดกลาง */
+  color: #666; /* สีตัวอักษร */
+  margin: 10px 0; /* ระยะห่างบนและล่าง */
+  font-style: italic; /* ตัวอักษรเอียง */
+}
